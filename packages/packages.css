@@ -9,6 +9,15 @@
     font-weight: 700;
 }
 
+:root {
+    --dark-green: #0b0c10;
+    --highlight-color: #0e659e;
+    --main-color: #66fcf1;
+    --lighter-main: #45a29e;
+    --dark-main: #1f2833;
+}
+
+
 .plans a {
     text-decoration: none;
     padding:2rem;
@@ -31,7 +40,7 @@ main {
 .package {
     width: 80%;
     margin: 1rem 0;
-    border:4px solid #0e4f1f;
+    border:4px solid var(--dark-main);
     border-left: none;
     position: relative;
     z-index: 0;
@@ -75,7 +84,7 @@ main {
 .description {
     padding: 1rem;
     border: 1px solid rgb(0, 44, 0);
-    color: #0e4f1f;
+    color: var(--dark-main);
     background: white;
     font: 700 1.2rem "AnonymousPro", sans-serif;
     /* font variant then font style then font weight then font size then font family */
@@ -86,15 +95,15 @@ main {
 }
 
 #plus {
-    background: rgba(213, 255, 220, 0.95);
+    background: rgba(219, 244, 248, 0.95);
     margin-top: 2.5rem;
 }
 
 #free {
-    background: rgba(234, 252, 237, 0.95);
+    background: rgba(219, 244, 248, 0.95);
     float: right;
     border-right:none;
-    border-left:4px solid #0e4f1f;
+    border-left:4px solid var(--dark-main);
     text-align: right;
 }
 
@@ -105,7 +114,7 @@ main {
 }
 
 #premium {
-    background: rgba(14, 79, 31, 0.95);
+    background: rgba(14, 48, 79, 0.95);
 }
 
 #premium .title {
@@ -126,11 +135,11 @@ main {
 
 @media (min-width: 1500px) {
     .package {
-        border-left: 4px solid #0e4f1f;
+        border-left: 4px solid var(--dark-main);
     }
 
     #free {
-        border-right: 4px solid #0e4f1f;
+        border-right: 4px solid var(--dark-main);
     }
 
     #free:hover,
