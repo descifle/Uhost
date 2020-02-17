@@ -27,7 +27,7 @@ a {
     text-decoration: none;
 }
 
-#cta {
+/* #cta {
     background:rgb(228, 96, 20);
     width: 10rem;
     height: 4rem;
@@ -42,6 +42,10 @@ a {
 
 #cta:hover {
     cursor: pointer;
+} */
+
+#plans {
+    margin-top: 5rem;
 }
 
 .plan {
@@ -77,6 +81,10 @@ a {
 
 .plan__price {
     color: #858585;
+}
+
+.plan--highlighted_price {
+    color: rgb(195, 125, 44);
 }
 
 .plan--highlighted .plan__title {
